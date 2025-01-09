@@ -12367,4 +12367,419 @@ p {
 
 .card4-img:hover {
   transform: scale(1.05);
+}
+
+.bigtitle {
+  width: 100vw; /* Full width of the viewport */
+  height: 250px;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bigtitle-img-services {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/services/bande-zebre.jpg"); /* Path to your front image */
+  padding: 0;
+  position: relative;
+}
+
+.bigtitle-content {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-services, .card-habitats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-restaurant {
+  position: relative;
+  margin: 10px;
+  background-color: #C9643B;
+  width: 340px;
+  height: 600px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-restaurant-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/services/restaurant.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-restaurant-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-visite {
+  position: relative;
+  margin: 10px;
+  background-color: #627D4B;
+  width: 340px;
+  height: 600px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-visite-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/services/visite.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-visite-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-train {
+  position: relative;
+  margin: 10px;
+  background-color: #F2CFC2;
+  width: 340px;
+  height: 600px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-train-img {
+  position: relative;
+  width: 310px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/services/petit-train.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-train-text {
+  width: 310px;
+  margin: 5px auto;
+}
+
+.card-restaurant:hover, .card-train:hover, .card-visite:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.info-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+.info-services-text p {
+  width: 100%;
+  margin: 5px auto;
+  padding: 10px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.bigtitle-img-habitats {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/habitats/bande-jaguar.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.card-marais {
+  position: relative;
+  margin: 10px;
+  background-color: #F2CFC2;
+  width: 370px;
+  height: 620px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-marais-img {
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/habitats/marais.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-marais-text {
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-savane {
+  position: relative;
+  margin: 10px;
+  background-color: #627D4B;
+  width: 370px;
+  height: 620px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-savane-img {
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/habitats/savane.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-savane-text {
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-jungle {
+  position: relative;
+  margin: 10px;
+  background-color: #C9643B;
+  width: 370px;
+  height: 620px;
+  padding: 0;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card-jungle-img {
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  background-image: url("/img/habitats/jungle.jpg"); /* Path to your front image */
+  background-size: cover;
+  background-position: center; /* Center the image */
+}
+
+.card-jungle-text {
+  width: 350px;
+  margin: 3px auto;
+}
+
+.card-marais:hover, .card-savane:hover, .card-jungle:hover {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.button-marais, .button-savane, .button-jungle {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3px;
+  border: 1;
+  background-color: #FFC72C;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  font-style: normal;
+}
+
+.button-marais:hover, .button-savane:hover, .button-jungle:hover {
+  background-color: #F28A30;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  font-style: normal;
+}
+
+.bigtitle-img-marais {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/habitats/marais.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-savane {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/habitats/savane.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-jungle {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/habitats/jungle.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.marais-description, .savane-description, .jungle-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1200px;
+}
+
+.marais.marais-description p, .savane.savane-description p, .jungle.jungle-description p {
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.marais-content, .savane-content, .jungle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+  max-width: 1300px;
+  padding: 5px;
+}
+
+.container-marais, .container-savane, .container-jungle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.galerie-card {
+  height: 300px;
+  width: 400px;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galerie-card:hover .titre-image {
+  opacity: 1;
+}
+.galerie-card:hover img {
+  filter: brightness(0.3);
+}
+.galerie-card:hover .btn-animal {
+  display: block;
+}
+.galerie-card img {
+  transition: all 0.2s;
+}
+.galerie-card .titre-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.galerie-card .btn-animal {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFC72C;
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.galerie-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-animal:hover {
+  background-color: #F28A30;
+}
+
+.modal-body p {
+  text-align: justify;
+}
+
+.modal-body h3, .modal-body .h3 {
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */
