@@ -3,57 +3,45 @@
 // INDEX
 html, body {
     position: relative;
-    min-height: 100vh;
     background-color: $color1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100%;
 }
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    box-sizing: border-box;
-}
-#container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
-    flex-grow: 1;
+    max-width: 1440px;
 }
 header {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: $color1;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 main {
     background-color: $color1;
-    width: 100vw;
-    height: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    flex-grow: 1;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-footer.footer {
-    padding: 15px;
-    margin: 0 auto;
+footer {
+    margin: 10px auto;
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: $color1;
 }
 footer p {
@@ -93,7 +81,6 @@ p {
 .navbar {
     display: flex;
     margin: 0 auto;
-    justify-content: space-around;
     max-width: 1440px;
     padding: 0;
 }
@@ -104,8 +91,9 @@ p {
     font-size: 1.5rem;
     font-family: $family-title;
     font-weight: 600;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .navbar-brand {
     margin: 0;
@@ -113,11 +101,12 @@ p {
 }
 .container-fluid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0;
     width: 100vw;
+    max-width: 1440px;
     height: 100%;
 }
 .logo {
@@ -146,3 +135,231 @@ p {
 }
 
 // HOME PAGE
+.welcome-video {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 810px;
+}
+.welcome-video video {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.overlay {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(98, 125, 75, 0.65); /* Transparence à 50% */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 240px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.habitats-services{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+}
+.card1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+}
+.card1-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+.card1-front {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    background-size: cover;
+    background-image: url('/img/mainPage/habitats.jpg');
+    transition: filter 0.6s;
+    backface-visibility: hidden;
+}
+.card1-front h2 {
+    font-family: $family-title;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: 700;
+}
+.card1-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    background-color: $color5 ;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.card1:hover .card1-front {
+    filter: blur(5px);
+}
+.card1:hover .card1-back {
+    opacity: 1;
+}
+.card1-back button {
+    background-color: $color2;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card1-back button:hover {
+    background-color: $color4;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card2{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.card2-img {
+    max-width: 300px;
+    max-height: 320px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+.card2-img:hover {
+    transform: scale(1.05); 
+}
+.card3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+}
+.card3-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+.card3-front {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    background-size: cover;
+    background-image: url('/img/mainPage/services.jpg');
+    transition: filter 0.6s;
+    backface-visibility: hidden;
+}
+.card3-front h2 {
+    font-family: $family-title;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: 700;
+}
+.card3-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 320px;
+    background-color: $color6;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+.card3:hover .card3-front {
+    filter: blur(5px);
+}
+.card3:hover .card3-back {
+    opacity: 1;
+}
+.card3-back button {
+    background-color: $color2;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card3-back button:hover {
+    background-color: $color4;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card4{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.card4-img {
+    max-width: 240px;
+    max-height: 320px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('/img/mainPage/singe.jpg'); /* Path to your front image */
+    background-size: cover;
+    background-position: center; /* Center the image */
+    transition: transform 0.3s;
+}
+.card4-img:hover {
+    transform: scale(1.05); 
+}
