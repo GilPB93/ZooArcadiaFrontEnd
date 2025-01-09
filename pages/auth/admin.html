@@ -1,0 +1,274 @@
+<div>
+    <section class="bigtitle">
+        <div class="bigtitle-img-admin"></div>
+    </section>
+
+    <section class="bigtitle-content">
+        <div class="bigtitle-text">
+            <h1 class="text-white text-center">
+                Espace Administrateur
+            </h1>
+            <h2 class="text-white text-center">
+                Bienvenue dans votre espace personnel, "name" !
+            </h2>
+        </div>
+    </section>
+
+    <section class="admin-content1">
+        <div class="admin-content-dash-horaires row">
+            <div class="dashboard col-12 col-lg-6">
+                <div class="dashboard">
+                    <label for="affichageDashboard">DASHBOARD :</label>
+                    <input type="text" class="form-control" id="affichageDashboard" rows="10" value="Affichage automatique nombre de clicks par espece animal" readonly>
+                    <!--ajouter un affichage automatique avec les données fournies par le vet-->
+                </div>
+            </div>
+            <div class="crud-horaires col-12 col-lg-6">
+                        <h2>Gestion des horaires</h2> 
+                        <div>
+                            <h3>Horaire d'ouverture :</h3>
+                            <textarea class="form-control" id="horaireOuverture" rows="1" placeholder="Saisissez ici l'heure d'ouverture du zoo"></textarea>
+                        </div>
+                        <div>
+                            <h3>Horaire de fermeture :</h3>
+                            <textarea class="form-control" id="horaireFermeture" rows="1" placeholder="Saisissez ici l'heure de fermeture du zoo"></textarea>
+                        </div>
+                        <div class="btn-valider-horaires">
+                            <button class="btn btn-secondary">SOUMETTRE</button>
+                            <!--ajouter une alerte de confirmation d'envoie de rapport-->
+                            <!--ajouter une alerte de succès ou échec-->
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="admin-content2">
+        <div class="admin-content-comptes-rapports row">
+            <div class="crud-comptes col-12 col-lg-6">
+                <h2>Gestion des comptes</h2>
+                <div>
+                    <h3 >Poste :
+                        <select class="form-select-poste" aria-label="select rapport poste">
+                            <option selected>Selectionnez le poste souhaité</option>
+                            <option value="1">Employé</option>
+                            <option value="2">Vétérinaire</option>
+                        </select>
+                    </h3>
+                </div>
+                <div>
+                    <h3>Nom :</h3>
+                    <textarea class="form-control" id="nomCompte" rows="1" placeholder="Saisissez ici le nom du collaborateur"></textarea>
+                </div>
+                <div>
+                    <h3>Prénom :</h3>
+                    <textarea class="form-control" id="commentaireHabitat" rows="1" placeholder="Saisissez ici le prénom du collaborateur"></textarea>
+                </div>
+                <div class="user-email">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+                </div>
+                <div class="user-password">
+                    <label for="PasswordInput" class="form-label ">Mot de passe</label>
+                    <input type="password" class="form-control" id="PasswordInput" name="Mot de passe">
+                    <p class="mdp-consignes">Le mot de passe doit contenir : minimum 8 caractères (dont une majuscule, une minuscule, un chiffre et un caractère spécial)</p>
+                </div>
+                <div class="btn-crud-compte">
+                    <div class="btn-creer-compte">
+                        <button class="btn btn-secondary">Créer compte</button>
+                        <!--ajouter une alerte de confirmation de création de compte-->
+                    </div>
+                    <div class="btn-modifier-compte">
+                        <button class="btn">Modifier compte</button>
+                        <!--ajouter une alerte de confirmation de modification de compte-->
+                    </div>
+                    <div class="btn-supprimer-compte">
+                        <button class="btn btn-danger">Supprimer compte</button>
+                        <!--ajouter une alerte de confirmation de suppression de compte-->
+                    </div> 
+                </div>
+            </div>
+            <div class="compte-rendu-vet-empl col-12 col-lg-6">
+                <h2>Compte rendu vétérinaire & employé</h2>
+                <div>
+                    <h3 >Race :
+                        <select class="form-select-race" aria-label="select race">
+                            <option selected>Selectionnez la race d'animal souhaité</option>
+                            <option value="1">Race</option>
+                            <option value="2">Race</option>
+                            <option value="3">Race</option>
+                        </select>
+                    </h3>
+                </div>
+                <div>
+                    <h3 >Date :
+                        <select class="form-select-rapport-date" aria-label="select rapport date">
+                            <option selected>Selectionnez la date du rapport souhaité</option>
+                            <option value="1">xx/xx/xxxx</option>
+                            <option value="2">xx/xx/xxxx</option>
+                            <option value="3">xx/xx/xxxx</option>
+                        </select>
+                    </h3>
+                </div>
+                <div class="btn-chercher-compte-rendu">
+                    <button class="btn btn-secondary">RECHERCHER</button>
+                    <!--ajouter la récupération des données souhaitées-->
+                </div>
+                <div class="affichage-compte-rendu">
+                    <label for="affichageCompteRendu">Le rapport :</label>
+                    <input type="text" class="form-control" id="affichageCompteRendu" rows="10" value="Affichage automatique du compte rendu vétérinaire et employé" readonly>
+                    <!--ajouter un affichage automatique avec les données fournies par le vet-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="admin-content3">
+        <div class="admin-content-habitats-services row">
+            <div class="crud-habitats col-12 col-lg-6">
+                <h2>Gestion des habitats</h2>
+                <div>
+                    <h3>Nom de l'habitat :</h3>
+                    <textarea class="form-control" id="nomHabitat" rows="1" placeholder="Saisissez ici le nom de l'habitat"></textarea>
+                </div>
+                <div class="select-image-habitat">
+                    <label for="imageHabitat" class="form-label">Image de l'habitat</label>
+                    <input type="file" class="form-control" id="imageHabitat">
+                </div>
+                <div class="selection-animaux">
+                    <div class="dropdown-selection-animaux">
+                        <label for="dropdownAnimalSelection" class="form-label">Animaux de l'habitat</label>
+                        <button class="btn dropdown-toggle" type="button" id="dropdownAnimalSelection" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sélectionnez les animaux correspondant à l'habitat souhaité
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownAnimalSelection">
+                            <li>
+                                <label class="dropdown-item">
+                                <input type="checkbox" value="Option 1"> Option 1
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                <input type="checkbox" value="Option 2"> Option 2
+                                </label>
+                            </li>
+                            <li>
+                                <label class="dropdown-item">
+                                <input type="checkbox" value="Option 3"> Option 3
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Description :</h3>
+                        <textarea class="form-control" id="etatSante" rows="6" placeholder="Saisissez ici le compte rendu de l'état de santé de l'animal sélectionné"></textarea>
+                    </div>
+                    <div class="btn-crud-habitats">
+                        <div class="btn-creer-habitat">
+                            <button class="btn btn-secondary">Créer habitat</button>
+                            <!--ajouter une alerte de confirmation de création de compte-->
+                        </div>
+                        <div class="btn-modifier-habitat">
+                            <button class="btn">Modifier habitat</button>
+                            <!--ajouter une alerte de confirmation de modification de compte-->
+                        </div>
+                        <div class="btn-supprimer-habitat">
+                            <button class="btn btn-danger">Supprimer habitat</button>
+                            <!--ajouter une alerte de confirmation de suppression de compte-->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="crud-services col-12 col-lg-6">
+                <h2>Gestion des services</h2>
+                <div>
+                    <h3>Service :
+                        <select class="form-select-service" aria-label="select service">
+                            <option selected>Selectionnez le service souhaité</option>
+                            <option value="1">Restauration</option>
+                            <option value="2">Visite guidée</option>
+                            <option value="3">Petit train</option>
+                        </select>
+                    </h3>
+                </div>
+                <div>
+                    <h3>Nom du service :</h3>
+                    <textarea class="form-control" id="nomService" rows="1" placeholder="Saisissez ici le nom du service"></textarea>
+                </div>
+                <div class="select-image-service">
+                    <label for="imageService" class="form-label">Image du service</label>
+                    <input type="file" class="form-control" id="imageService">
+                </div>
+                <div>
+                    <h3>Description :</h3>
+                    <textarea class="form-control" id="descriptionService" rows="6" placeholder="Saisissez ici la description du service"></textarea>
+                </div>
+                <div class="btn-crud-services">
+                    <div class="btn-creer-service">
+                        <button class="btn btn-secondary">Créer service</button>
+                        <!--ajouter une alerte de confirmation de création de compte-->
+                    </div>
+                    <div class="btn-modifier-service">
+                        <button class="btn">Modifier service</button>
+                        <!--ajouter une alerte de confirmation de modification de compte-->
+                    </div>
+                    <div class="btn-supprimer-service">
+                        <button class="btn btn-danger">Supprimer service</button>
+                        <!--ajouter une alerte de confirmation de suppression de compte-->
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="admin-content4">
+        <div class="crud-animaux row">
+            <h2>Gestion des animaux</h2>
+            <div>
+                <h3>Espèce de l'animal :</h3>
+                <textarea class="form-control" id="especeAnimal" rows="1" placeholder="Saisissez ici l'espèce animal"></textarea>
+            </div>
+            <div>
+                <h3>Prénom de l'animal :</h3>
+                <textarea class="form-control" id="prenomAnimal" rows="1" placeholder="Saisissez ici le prénom de l'animal"></textarea>
+            </div>
+            <div>
+                <h3>Habitat d'affectation :
+                    <select class="form-select-habitat" aria-label="select habitat">
+                        <option selected>Selectionnez l'habitat d'affectation de l'animal</option>
+                        <option value="1">Marais</option>
+                        <option value="2">Savane</option>
+                        <option value="3">Jungle</option>
+                    </select>
+                </h3>
+            </div>
+            <div class="select-image-animal">
+                <label for="imageAnimal" class="form-label">Image de l'animal</label>
+                <input type="file" class="form-control" id="imageAnimal">
+            </div>
+            <div>
+                <h3>Curiosités :</h3>
+                <textarea class="form-control" id="curiosites" rows="4" placeholder="Saisissez ici des curiosités sur l'animal"></textarea>
+            </div>
+            <div>
+                <h3>Description :</h3>
+                <textarea class="form-control" id="descriptionAnimal" rows="6" placeholder="Saisissez ici des informatoins sur l'animal"></textarea>
+            </div>
+            <div class="btn-crud-animaux">
+                <div class="btn-creer-animal">
+                    <button class="btn btn-secondary">Créer animal</button>
+                    <!--ajouter une alerte de confirmation de création de compte-->
+                </div>
+                <div class="btn-modifier-animal">
+                    <button class="btn">Modifier animal</button>
+                    <!--ajouter une alerte de confirmation de modification de compte-->
+                </div>
+                <div class="btn-supprimer-animal">
+                    <button class="btn btn-danger">Supprimer animal</button>
+                    <!--ajouter une alerte de confirmation de suppression de compte-->
+                </div> 
+            </div>
+        </div>
+    </section>
+</div>

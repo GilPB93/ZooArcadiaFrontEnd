@@ -1,0 +1,112 @@
+<div>
+    <section class="bigtitle">
+        <div class="bigtitle-img-vet"></div>
+    </section>
+
+    <section class="bigtitle-content">
+        <div class="bigtitle-text">
+            <h1 class="text-white text-center">
+                Espace Vétérinaire
+            </h1>
+            <h2 class="text-white text-center">
+                Bienvenue dans votre espace personnel, "name" !
+            </h2>
+        </div>
+    </section>
+
+    <section class="vet-content row">
+        <div class="vet-compte-rendu col-12 col-lg-6">
+            <h2>Compte rendu</h2> 
+            <div>
+                <h3 >Race :
+                    <select class="form-select-race" aria-label="select race">
+                        <option selected>Selectionnez la race d'animal souhaité</option>
+                        <option value="1">Race</option>
+                        <option value="2">Race</option>
+                        <option value="3">Race</option>
+                    </select>
+                </h3>
+            </div>
+            <div>
+                <h3 >Prénom :
+                    <select class="form-select-name" aria-label="select name">
+                        <option selected>Selectionnez la race d'animal souhaité</option>
+                        <option value="1">X</option>
+                        <option value="2">Y</option>
+                        <option value="3">Z</option>
+                    </select> <!--ajouter un affichage automatique de la liste des prénoms animaux-->
+                </h3>
+            </div>
+            <div>
+                <h3>Etat de santé :</h3>
+                <textarea class="form-control" id="etatSante" rows="6" placeholder="Saisissez ici le compte rendu de l'état de santé de l'animal sélectionné"></textarea>
+            </div>
+            <div>
+                <h3>Alimentation recommandée :</h3>
+                <textarea class="form-control" id="alimentationRecommendee" rows="2" placeholder="Saisissez ici l'alimentation récommandée pour l'animal sélectionné"></textarea>
+            </div>
+            <div>
+                <h3>Quantité recommandée :</h3>
+                <textarea class="form-control" id="quantiteRecommendee" rows="2" placeholder="Saisissez ici la quantité d'alimentation récommandée pour l'animal sélectionné"></textarea>
+            </div>
+            <div>
+                <h3>Etat de l'habitat :
+                    <select class="form-select-etat-habitat" aria-label="select etat habitat">
+                        <option selected>Selectionnez la race d'animal souhaité</option>
+                        <option value="1">Très bon état</option>
+                        <option value="2">Bon état</option>
+                        <option value="3">Etat moyen</option>
+                        <option value="3">Mauvais état</option>
+                    </select> <!--ajouter un affichage automatique de la liste des prénoms animaux-->
+                </h3>
+            </div>
+            <div>
+                <h3>Commentaire sur les habitats :</h3>
+                <textarea class="form-control" id="commentaireHabitat" rows="4" placeholder="Saisissez ici votre commentaire sur l'habitat de l'animal sélectionné"></textarea>
+            </div>
+            <div>
+                <h3 class="date-heure">Date et Heure :
+                <span id="datetime"></span>
+                </h3>
+            </div>
+            <div class="btn-soumettre-compte-rendu">
+                <button class="btn btn-secondary">SOUMETTRE</button>
+                <!--ajouter une alerte de confirmation d'envoie de rapport-->
+                <!--ajouter une alerte de succès ou échec-->
+            </div>
+        </div>
+
+        <div class="vet-rapport-ali col-12 col-lg-6">
+            <h2>Rapport d'alimentation</h2>
+            <div>
+                <h3 >Race :
+                    <select class="form-select-race" aria-label="select race">
+                        <option selected>Selectionnez la race d'animal souhaité</option>
+                        <option value="1">Race</option>
+                        <option value="2">Race</option>
+                        <option value="3">Race</option>
+                    </select>
+                </h3>
+            </div>
+            <div>
+                <h3 >Date :
+                    <select class="form-select-rapport-date" aria-label="select rapport date">
+                        <option selected>Selectionnez la date du rapport souhaité</option>
+                        <option value="1">xx/xx/xxxx</option>
+                        <option value="2">xx/xx/xxxx</option>
+                        <option value="3">xx/xx/xxxx</option>
+                    </select>
+                </h3>
+            </div>
+            <div class="btn-chercher-compte-rendu">
+                <button class="btn btn-secondary">RECHERCHER</button>
+                <!--ajouter la récupération des données souhaitées-->
+            </div>
+            <div class="affichage-rapport-alimentation">
+                <label for="affichageRapportAlimentation">Le rapport :</label>
+                <input type="text" class="form-control" id="affichageRapportAlimentation" rows="10" value="Affichage automatique (auteur, date : rapport)" readonly>
+                <!--ajouter un affichage automatique avec les données fournies par le vet-->
+            </div>
+        </div>
+    </section>
+</div>

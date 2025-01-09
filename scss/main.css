@@ -12778,8 +12778,718 @@ p {
 
 .modal-body p {
   text-align: justify;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
 }
 
 .modal-body h3, .modal-body .h3 {
-  font-style: italic;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.bigtitle-img-contact {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../img/logo/bande-tucan.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.contact-form {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.contact-name, .contact-title, .contact-email, .contact-message {
+  margin: 10px;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+}
+
+.contact-submit button {
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #FFC72C;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.contact-submit button:hover {
+  background-color: #F28A30;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bigtitle-text {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+}
+
+.contact-required p {
+  font-family: "Arial", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.bigtitle-img-connexion {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("/img/logo/bande-elef.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.connexion-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+}
+
+.connexion-submit button {
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #FFC72C;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.connexion-submit button:hover {
+  background-color: #F28A30;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.connexion-email {
+  margin: 10px;
+  width: 100%;
+}
+
+.connexion-password {
+  margin: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.connexion-form {
+  height: 360px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  top: 0;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: auto;
+}
+
+.form-label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.connexion-required p {
+  font-family: "Arial", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.form-control {
+  font-family: "Arial", sans-serif;
+  font-size: 0.8rem;
+}
+
+.bigtitle-img-vet {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../img/logo/bande-lion.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-admin {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../img/logo/bande-girafe.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.bigtitle-img-employe {
+  width: 100%; /* Cover the full width of .bigtitle */
+  height: 100%; /* Cover the full height of .bigtitle */
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the image */
+  background-image: url("../img/logo/bande-grenouille.jpg"); /* Path to your front image */
+  padding: 0;
+  position: absolute;
+}
+
+.employe-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  align-items: flex-start;
+}
+
+.employe-content h3, .employe-content .h3 {
+  padding-top: 5px;
+}
+
+.employe-rapport, .employe-avis-service {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.employe-rapport {
+  background-color: #C9643B;
+  padding: 10px;
+}
+
+.form-select-race, .form-select-animal, .form-select-service {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.btn-soumettre-rapport, .btn-soumettre-modif-service {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.btn-soumettre-rapport button, .validation-avis button, .modification-services button {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+}
+
+.btn-soumettre-rapport button:hover, .btn-soumettre-modif-service button:hover {
+  background-color: #A8D8EA;
+}
+
+.btn-valider:hover {
+  background-color: #F28A30;
+}
+
+.validation-avis {
+  display: flex;
+  width: 100%;
+  background-color: #627D4B;
+  border-radius: 10px;
+}
+
+.validation-avis-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  align-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.modification-services {
+  display: flex;
+  width: 100%;
+  background-color: #F2CFC2;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.modification-services-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  align-content: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.btn-valider, .btn-refuser {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+}
+
+input[type=text] {
+  font-family: "Arial", sans-serif;
+}
+
+.affichage-alimentation, .affichage-quantité {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.affichage-alimentation label, .affichage-quantité label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.vet-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  align-items: flex-start;
+}
+
+.vet-content h3, .vet-content .h3 {
+  padding-top: 5px;
+}
+
+.vet-compte-rendu, .vet-rapport-ali {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  margin: 5px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.vet-compte-rendu {
+  background-color: #627D4B;
+}
+
+.vet-rapport-ali {
+  background-color: #C9643B;
+}
+
+.vet-compte-rendu button, .vet-rapport-ali button {
+  border-radius: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+}
+
+.vet-compte-rendu button:hover {
+  background-color: #F28A30;
+}
+
+.vet-rapport-ali button:hover {
+  background-color: #F28A30;
+}
+
+.form-select-race, .form-select-name, .form-select-service,
+.form-select-date, .form-select-etat-habitat, .form-select-rapport-date,
+.form-select-poste, .form-control {
+  font-family: "Arial", sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.affichage-rapport-alimentation label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.admin-content1, .admin-content2, .admin-content3, .admin-content4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.admin-content1 h3, .admin-content1 .h3, .admin-content2 h3, .admin-content2 .h3, .admin-content3 h3, .admin-content3 .h3, .admin-content4 h3, .admin-content4 .h3 {
+  padding-top: 5px;
+}
+
+.admin-content-dash-horaires {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.dashboard, .crud-horaires, .crud-comptes, .compte-rendu-vet-empl, .crud-habitats, .crud-services, .crud-animaux {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: center;
+  max-width: 705px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.dashboard {
+  background-color: #627D4B;
+  height: 239px;
+}
+
+.crud-horaires {
+  background-color: #C9643B;
+}
+
+.dashboard label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  margin: 5px;
+}
+
+.crud-horaires h2, .crud-horaires .h2 {
+  margin: 5px;
+}
+
+.btn-valider-horaires {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-valider-horaires button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-valider-horaires button:hover {
+  background-color: #A8D8EA;
+}
+
+.admin-content-comptes-rapports {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.crud-comptes {
+  background-color: #A8D8EA;
+  border-radius: 10px;
+}
+
+.compte-rendu-vet-empl {
+  background-color: #F2CFC2;
+  border-radius: 10px;
+  height: 505px;
+}
+
+.crud-comptes label, .compte-rendu-vet-empl label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn-modifier-compte button {
+  background-color: #F28A30;
+}
+
+.btn-creer-compte button:hover {
+  background-color: #F28A30;
+}
+
+.btn-modifier-compte button:hover {
+  background-color: #627D4B;
+}
+
+.btn-creer-compte button, .btn-modifier-compte button, .btn-supprimer-compte button, .btn-chercher-compte-rendu button {
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+
+.btn-crud-compte {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.btn-chercher-compte-rendu button:hover {
+  background-color: #627D4B;
+}
+
+.btn-chercher-compte-rendu button {
+  background-color: #F28A30;
+}
+
+.crud-habitats {
+  background-color: #C9643B;
+}
+
+.crud-services {
+  background-color: #627D4B;
+}
+
+.select-image-habitat label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.selection-animaux {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.dropdown-selection-animaux label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.dropdown-selection-animaux {
+  display: flex;
+  align-items: center;
+}
+.dropdown-selection-animaux .dropdown-menu {
+  max-height: 200px;
+  width: 200px;
+  margin: 5px;
+  background-color: #FFFAF2;
+}
+.dropdown-selection-animaux .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+.dropdown-selection-animaux .dropdown-item input[type=checkbox] {
+  margin-right: 10px;
+}
+
+.dropdown-toggle {
+  background-color: #FFFAF2;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+}
+
+.dropdown-toggle:hover {
+  background-color: #FFFAF2;
+}
+
+.btn-modifier-habitat button {
+  background-color: #F28A30;
+}
+
+.btn-creer-habitat button:hover {
+  background-color: #F28A30;
+}
+
+.btn-modifier-habitat button:hover {
+  background-color: #627D4B;
+}
+
+.btn-creer-habitat button, .btn-modifier-habitat button, .btn-supprimer-habitat button, .btn-chercher-compte-rendu button {
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+
+.btn-crud-habitats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.admin-content-habitats-services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.select-image-service label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.btn-modifier-service button {
+  background-color: #F28A30;
+}
+
+.btn-creer-service button:hover {
+  background-color: #F28A30;
+}
+
+.btn-modifier-service button:hover {
+  background-color: #627D4B;
+}
+
+.btn-creer-service button, .btn-modifier-service button, .btn-supprimer-service button {
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+
+.btn-crud-services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.crud-animaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  padding: 5px;
+  max-width: 1430px;
+  width: 100%;
+  background-color: #F2CFC2;
+}
+
+.form-select-habitat {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.select-image-animal label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.btn-modifier-animal button {
+  background-color: #F28A30;
+}
+
+.btn-creer-animal button:hover {
+  background-color: #F28A30;
+}
+
+.btn-modifier-animal button:hover {
+  background-color: #627D4B;
+}
+
+.btn-creer-animal button, .btn-modifier-animal button, .btn-supprimer-animal button {
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+  border: 0;
+}
+
+.btn-crud-animaux {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

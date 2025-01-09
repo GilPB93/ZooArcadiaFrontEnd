@@ -1,0 +1,100 @@
+<div>
+    <section class="bigtitle">
+        <div class="bigtitle-img-employe"></div>
+    </section>
+
+    <section class="bigtitle-content">
+        <div class="bigtitle-text">
+            <h1 class="text-white text-center">
+                Espace Employé
+            </h1>
+            <h2 class="text-white text-center">
+                Bienvenue dans votre espace personnel, "name" !
+            </h2>
+        </div>
+    </section>
+
+    <section class="employe-content row">
+        <div class="employe-rapport col-12 col-lg-6">
+            <h2>Rapport d'alimentation</h2>
+            <div>
+                <h3 >Race :
+                    <select class="form-select-race" aria-label="select race">
+                        <option selected>Selectionnez la race d'animal souhaité</option>
+                        <option value="1">Race</option>
+                        <option value="2">Race</option>
+                        <option value="3">Race</option>
+                    </select>
+                </h3>
+            </div>
+            <div class="affichage-alimentation">
+                <label for="alimentationRecommendée">Alimentation Recommandée:</label>
+                <input type="text" class="form-control" id="alimentationRecommendée" rows="1" value="Affichage automatique" readonly>
+                <!--ajouter un affichage atumatique avec les données fournies par le vet-->
+            </div>        
+            <div class="affichage-quantité">
+                <label for="quantiteRecommendée">Quantité Recommandée:</label>
+                <input type="text" class="form-control" id="quantiteRecommendée" rows="1" value="Affichage automatique" readonly>
+                <!--ajouter un affichage atumatique avec les données fournies par le vet-->
+            </div>
+            <div>
+                <h3>Alimentation donnée :</h3>
+                <textarea class="form-control" id="alimentation" rows="6" placeholder="Saisissez ici l'alimentation donnée à l'animal de votre choix"></textarea>
+            </div>
+            <div>
+                <h3>Quantité :</h3>
+                <textarea class="form-control" id="quantite" rows="2" placeholder="Saisissez la quantité d'alimentation donnée et si elle varie de la quantité recommandée justifier"></textarea>
+            </div>
+            <div>
+                <h3 class="date-heure">Date et Heure :
+                <span id="datetime"></span>
+                </h3>
+            </div>
+            <div class="btn-soumettre-rapport">
+                <button class="btn btn-secondary">SOUMETTRE</button>
+                <!--ajouter une alerte de confirmation d'envoie de rapport-->
+                <!--ajouter une alerte de succès ou échec-->
+            </div>
+        </div>
+
+        <div class="employe-avis-service col-12 col-lg-6">
+            <div class="validation-avis">
+                <div class="validation-avis-content">
+                    <h2>Avis visiteurs</h2>
+                    <div>
+                        <textarea class="form-control" id="avis" rows="6"></textarea>
+                        <!--replacer cet espace par un affichage automatique des avis en carrousel-->
+                    </div>
+                    <div class="btn-valider-avis row">
+                        <button class="btn btn-secondary btn-valider">VALIDER</button>
+                        <button class="btn btn-danger btn-refuser">REFUSER</button>
+                        <!--ajouter une alerte de confirmation de validation ou refus d'avis-->
+                        <!--ajouter une alerte de succès ou échec-->
+                    </div>
+                </div>
+            </div>
+            <div class="modification-services">
+                <div class="modification-services-content">
+                    <h2>Modification d’information des services </h2>
+                    <h3>Service :
+                        <select class="form-select-service" aria-label="select animal">
+                            <option selected>Selectionnez le service que vous souhaitez modifier</option>
+                            <option value="1">Restauration</option>
+                            <option value="2">Visite guidé</option>
+                            <option value="3">Petit train</option>
+                        </select>
+                    </h3>
+                    <div>
+                        <h3>Nouvelle description :</h3>
+                        <textarea class="form-control" id="nouvelleDescription" rows="6" placeholder="Saisissez ici la nouvelle description du service sélectionné"></textarea>
+                    </div>
+                    <div class="btn-soumettre-modif-service">
+                        <button class="btn btn-secondary">SOUMETTRE</button>
+                        <!--ajouter une alerte de confirmation d'envoie de rapport-->
+                        <!--ajouter une alerte de succès ou échec-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
