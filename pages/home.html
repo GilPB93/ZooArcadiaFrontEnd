@@ -1,55 +1,179 @@
-<div>
+<section>
     <section class="welcome-video">
-        <video autoplay muted loop class="w-100">
+        <video autoplay muted loop >
             <source src="/img/logo/vid-welcome1.mp4" type="video/mp4">
         </video>
         <div class="welcome-text container overlay">
             <h1>Bienvenue au Zoo Arcadia</h1>
-            <p>Situé près de la forêt de Brocéliande en Bretagne, abrite divers animaux répartis par habitat et veille rigoureusement à leur bien-être grâce à des contrôles vétérinaires quotidiens. <br>
+            <p class="text-center">Situé près de la forêt de Brocéliande en Bretagne, abrite divers animaux répartis par habitat et veille rigoureusement à leur bien-être grâce à des contrôles vétérinaires quotidiens. <br>
                 Entièrement autonome en énergie, le zoo s'engage dans des pratiques écologiques, une valeur centrale promue par son directeur. 
             </p>
             <p>Ouverts tous les jours de 8h à 20h!</p>
         </div>
     </section>
-
     <section class="habitats-services">
-        <!-- Card1 -->
-        <div class="card1">
-            <div class="card1-inner">
-                <div class="card1-front">
-                    <h2 class="text-white">NOS HABITATS</h2>
-                </div>
-                <div class="card1-back">
-                    <h2>NOS HABITATS</h2>
-                    <p class="text-center">Cliquez sur le bouton ci-dessous pour explorer la vie incroyable qui s'y cache et apprendre tout sur les animaux qui y vivent. Que vous soyez amateur de la jungle dense, des plaines ensoleillées de la savane ou des mystérieux marais, chaque habitat vous promet une rencontre inoubliable avec la faune sauvage ! </p>
-                    <a href="/habitats">
-                        <button type="button" class="btn">En savoir plus</button>
-                    </a>
-                </div>
-            </div> 
-        </div>
-        <!-- Card2 -->
-        <div class="card2">
-            <img src="/img/mainPage/heron.jpg" alt="heron" class="card2-img">
-        </div>
-        <!-- Card3 -->
-        <div class="card3">
-            <div class="card3-inner">
-                <div class="card3-front">
-                    <h2 class="title-services text-white">NOS SERVICES</h2>
-                </div>
-                <div class="card3-back">
-                    <h2>NOS SERVICES</h2>
-                    <p class="text-center">Entre restaurants, visites guidées et tours en petit train, découvrez les services que notre zoo vous propose avec un simple click ci-dessous.</p>
-                    <a href="/services">
-                        <button type="button" class="btn">En savoir plus</button>
-                    </a>
-                </div>
-            </div> 
-        </div>
-        <!-- Card4 -->
-        <div class="card4">
-            <img src="/img/mainPage/singe.jpg" alt="singe" class="card4-img">
+        <div class="container-home row row-cols-2 row-cols-lg-3">
+            <!-- Card1 -->
+            <div class="card1 col">
+                <div class="card1-inner">
+                    <div class="card1-front">
+                        <h2 class="text-white">NOS HABITATS</h2>
+                    </div>
+                    <div class="card1-back">
+                        <h2>NOS HABITATS</h2>
+                        <p class="text-center">Cliquez sur le bouton ci-dessous pour explorer la vie incroyable qui s'y cache et apprendre tout sur les animaux qui y vivent. Que vous soyez amateur de la jungle dense, des plaines ensoleillées de la savane ou des mystérieux marais, chaque habitat vous promet une rencontre inoubliable avec la faune sauvage ! </p>
+                        <a href="/habitats">
+                            <button type="button" class="btn">En savoir plus</button>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+            <!-- Card2 -->
+            <div class="card2 col">
+                <div class="card2-inner">
+                    <div class="card2-front">
+                        <h2 class="title-services text-white">NOS SERVICES</h2>
+                    </div>
+                    <div class="card2-back">
+                        <h2>NOS SERVICES</h2>
+                        <p class="text-center">Entre restaurants, visites guidées et tours en petit train, découvrez les services que notre zoo vous propose avec un simple click ci-dessous.</p>
+                        <a href="/services">
+                            <button type="button" class="btn">En savoir plus</button>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+            <!-- Card3 -->
+            <div class="card3 col">
+                <div class="card3-inner">
+                    <div class="card3-front">
+                        <h2 class="title-services text-white">LAISSER UN AVIS</h2>
+                    </div>
+                    <div class="card3-back">
+                        <h2>LAISSER UN AVIS</h2>
+                        <p class="text-center">Nous espérons que votre visite au zoo vous a enchanté ! 
+                            Votre avis compte beaucoup pour nous afin d’améliorer l’expérience pour tous nos visiteurs. N’hésitez pas à partager vos impressions en cliquant sur le bouton ci-dessous. <br> 
+                            Merci pour votre précieuse contribution !
+                        </p>
+                        <a href="/avis">
+                            <button type="button" class="btn">En savoir plus</button>
+                        </a>
+                    </div>
+                </div> 
+            </div>
         </div>
     </section>
-</div>
+    <section class="avis-area">
+        <div class="avis-title">
+            <h2 class="text-center">AVIS DE NOS VISITEURS</h2>
+        </div>
+        <div id="carouselAvis" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-avis">
+                        <div class="card-img"><img src="/img/mainPage/avisIcon.png" class="w-100" alt="..."></div>
+                        <div class="card-avis-body">
+                            <h3 class="card-avis-title">Visite superbe!</h3>
+                            <p class="card-avis-text">Nous avons passé une superbe journée en famille au zoo.Les animaux sont magnifiques. 
+                                Je recommande vivement les familles à venir passer un agréable dimanche en famille, où autant les adultes, comme les enfants, apprennent sur les animaux.
+                                Je reviendrais sans hésiter..</p>
+                            <span>Publié le: 10/02/2024</span>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvis" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAvis" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>    
+</section>

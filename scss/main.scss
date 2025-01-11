@@ -3,20 +3,17 @@
 // INDEX
 html, body {
     position: relative;
-    background-color: $color1;
-    margin: 0 auto;
+    width: 100vw;
+    height: 100vh; 
     display: flex;
     flex-direction: column;
+    margin: 0; 
     align-items: center;
-    min-height: 100%;
+    background-color: $color1;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0 auto;
     max-width: 1440px;
+    margin: 0 auto; 
 }
 header {
     position: relative;
@@ -28,21 +25,31 @@ header {
     height: auto;
 }
 main {
+    flex-grow: 1;
     background-color: $color1;
-    margin: 0;
+    margin: 0; 
     display: flex;
     justify-content: center;
     align-items: center; 
+    width: 100%; 
 }
-footer {
-    margin: 10px auto;
+.main-content {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+footer.footer {
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
     background-color: $color1;
+    margin: 5px;
+    padding: 0;
+}
+.footer-content {
+    text-align: center;
 }
 footer p {
     font-family: $family-text;
@@ -142,234 +149,233 @@ p {
     margin: 0;
     width: 100%;
     height: 100%;
-    max-height: 810px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .welcome-video video {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-size: cover;
+    border-radius: 10px 10px 0 0;
 }
-.overlay {
-    position: absolute;
-    top: 80%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(98, 125, 75, 0.65); /* Transparence à 50% */
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 600px;
-    max-height: 240px;
+.welcome-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
-    text-align: left;
+    max-width: 1440px;
+    padding: 10px;
+    background-color: $color5;
 }
-.habitats-services{
+.welcome-text p {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.habitats-services {
     position: relative;
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
-    height: 320px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-.card1 {
+.container-home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+.card1, .card2, .card3 {
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-}
-.card1-inner {
+    max-width: 480px;
+    height: 320px;
+    border-radius: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+}  
+.card1-inner, .card2-inner, .card3-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 450px;
-    max-height: 320px;
     transition: transform 0.3s;
     text-align: center;
+}
+.card1-front, .card1-back, .card2-front, .card2-back, .card3-front, .card3-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+.card1-front, .card2-front, .card3-front {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: filter 0.6s;
+    backface-visibility: hidden;
+    border-radius: 0;
 }
 .card1-front {
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-    background-size: cover;
     background-image: url('/img/mainPage/habitats.jpg');
-    transition: filter 0.6s;
-    backface-visibility: hidden;
 }
-.card1-front h2 {
-    font-family: $family-title;
-    font-size: 1.5rem;
-    padding: 5px;
-    font-weight: 700;
-}
-.card1-back {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-    background-color: $color5 ;
-    background-size: cover;
-    background-position: center;
-    backface-visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.6s;
-}
-.card1:hover .card1-front {
-    filter: blur(5px);
-}
-.card1:hover .card1-back {
-    opacity: 1;
-}
-.card1-back button {
-    background-color: $color2;
-    font-family: $family-title;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.card1-back button:hover {
-    background-color: $color4;
-    font-family: $family-title;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.card2{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.card2-img {
-    max-width: 300px;
-    max-height: 320px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s;
-}
-.card2-img:hover {
-    transform: scale(1.05); 
-}
-.card3 {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-}
-.card3-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-    transition: transform 0.3s;
-    text-align: center;
+.card2-front {
+    background-image: url('/img/mainPage/services.jpg');
 }
 .card3-front {
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-    background-size: cover;
-    background-image: url('/img/mainPage/services.jpg');
-    transition: filter 0.6s;
-    backface-visibility: hidden;
+    background-image: url('/img/mainPage/avis.jpg');
 }
-.card3-front h2 {
+.card1-front h2, .card2-front h2, .card3-front h2 {
     font-family: $family-title;
     font-size: 1.5rem;
     padding: 5px;
     font-weight: 700;
 }
-.card3-back {
-    position: absolute;
+.card1-back, .card2-back, .card3-back {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+    border-radius: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 320px;
-    background-color: $color6;
-    background-size: cover;
-    background-position: center;
-    backface-visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.6s;
 }
-.card3:hover .card3-front {
+.card1-back {
+    background-color: $color4;
+}
+.card2-back {
+    background-color: $color5;
+}
+.card3-back {
+    background-color: $color7;
+}
+.card1:hover .card1-front, .card2:hover .card2-front, .card3:hover .card3-front {
     filter: blur(5px);
 }
-.card3:hover .card3-back {
+.card1:hover .card1-back, .card2:hover .card2-back, .card3:hover .card3-back {
     opacity: 1;
 }
-.card3-back button {
+.card1-back button, .card2-back button, .card3-back button {
     background-color: $color2;
     font-family: $family-title;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin: 10px;
 }
-.card3-back button:hover {
+.card1-back button:hover, .card2-back button:hover, .card3-back button:hover {
     background-color: $color4;
     font-family: $family-title;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-.card4{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.card4-img {
-    max-width: 240px;
-    max-height: 320px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background-image: url('/img/mainPage/singe.jpg'); /* Path to your front image */
-    background-size: cover;
-    background-position: center; /* Center the image */
-    transition: transform 0.3s;
-}
-.card4-img:hover {
-    transform: scale(1.05); 
-}
 
+.avis-area{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    padding: 10px;
+    background-color: $color4;
+    border-radius: 0 0 10px 10px;
+
+}
+.avis-title{
+    position: relative;
+    display: flex;
+    align-items: start;
+}
+.carousel-inner {
+    padding: 1em;
+}
+.card-avis {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 10px;
+    background-color: $color7;
+    padding: 10px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: $color1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.card-img img {
+    max-height: 40px;
+    max-width: 40px;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+@media (max-width: 767px) {
+    .card-avis {
+      height: 100%;
+    }
+}
+.card-avis-body h3, .card-avis-body p, .card-avis-body span {
+    margin: 10px;
+}
+.card-avis-body span {
+    font-family: $family-text;
+    font-size: 0.8rem;
+}
 
 
 // SERVICES PAGE
 .bigtitle {
-    width: 100vw; /* Full width of the viewport */
+    width: 100vw;
     height: 250px;
     margin: 0;
     position: relative;
@@ -379,11 +385,11 @@ p {
     align-items: flex-start;
 }
 .bigtitle-img-services {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/services/bande-zebre.jpg'); /* Path to your front image */
+    width: 100%;
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('/img/services/bande-zebre.jpg');
     padding: 0;
     position: relative;
  
@@ -426,9 +432,9 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/services/restaurant.jpg'); /* Path to your front image */
+    background-image: url('/img/services/restaurant.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
 }
 .card-restaurant-text{
     width: 310px;
@@ -453,9 +459,9 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/services/visite.jpg'); /* Path to your front image */
+    background-image: url('/img/services/visite.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
 }
 .card-visite-text{
     width: 310px;
@@ -480,16 +486,16 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/services/petit-train.jpg'); /* Path to your front image */
+    background-image: url('/img/services/petit-train.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
 }
 .card-train-text{
     width: 310px;
     margin: 5px auto;
 }
 .card-restaurant:hover, .card-train:hover, .card-visite:hover {
-    transform: scale(1.05); /* Zoom in slightly on hover */
+    transform: scale(1.05); 
 }
 .info-services{
     display: flex;
@@ -512,11 +518,11 @@ p {
 
 // HABITATS PAGE
 .bigtitle-img-habitats {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/habitats/bande-jaguar.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/habitats/bande-jaguar.jpg');
     padding: 0;
     position: absolute;
 }
@@ -539,9 +545,9 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/habitats/marais.jpg'); /* Path to your front image */
+    background-image: url('/img/habitats/marais.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
 }
 .card-marais-text{
     width: 350px;
@@ -566,9 +572,9 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/habitats/savane.jpg'); /* Path to your front image */
+    background-image: url('/img/habitats/savane.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center;
 }
 .card-savane-text{
     width: 350px;
@@ -593,16 +599,16 @@ p {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    background-image: url('/img/habitats/jungle.jpg'); /* Path to your front image */
+    background-image: url('/img/habitats/jungle.jpg'); 
     background-size: cover;
-    background-position: center; /* Center the image */
+    background-position: center; 
 }
 .card-jungle-text{
     width: 350px;
     margin: 3px auto;
 }
 .card-marais:hover, .card-savane:hover, .card-jungle:hover {
-    transform: scale(1.05); /* Zoom in slightly on hover */
+    transform: scale(1.05); 
 }
 .button-marais, .button-savane, .button-jungle{
     border-radius: 10px;
@@ -631,29 +637,29 @@ p {
 
 //BIGTITLES MARAIS, SAVANE, JUNGLE
 .bigtitle-img-marais {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/habitats/marais.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('/img/habitats/marais.jpg'); 
     padding: 0;
     position: absolute;
 }
 .bigtitle-img-savane {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/habitats/savane.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center;
+    background-image: url('/img/habitats/savane.jpg');
     padding: 0;
     position: absolute;
 }
 .bigtitle-img-jungle {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/habitats/jungle.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('/img/habitats/jungle.jpg');
     padding: 0;
     position: absolute;
 }
@@ -762,11 +768,11 @@ p {
 
 // CONTACT PAGE
 .bigtitle-img-contact {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('../img/logo/bande-tucan.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('../img/logo/bande-tucan.jpg');
     padding: 0;
     position: absolute;
 }
@@ -830,11 +836,11 @@ p {
 
 // CONNEXTION PAGE
 .bigtitle-img-connexion {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('/img/logo/bande-elef.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('/img/logo/bande-elef.jpg');
     padding: 0;
     position: absolute;
 }
@@ -900,29 +906,29 @@ p {
 
 //BIGTITLES ADMIN, EMPLOYE, VETERINAIRE
 .bigtitle-img-vet {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('../img/logo/bande-lion.jpg'); /* Path to your front image */
+    width: 100%;
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('../img/logo/bande-lion.jpg'); 
     padding: 0;
     position: absolute;
 }
 .bigtitle-img-admin {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('../img/logo/bande-girafe.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('../img/logo/bande-girafe.jpg');
     padding: 0;
     position: absolute;
 }
 .bigtitle-img-employe {
-    width: 100%; /* Cover the full width of .bigtitle */
-    height: 100%; /* Cover the full height of .bigtitle */
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-image: url('../img/logo/bande-grenouille.jpg'); /* Path to your front image */
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('../img/logo/bande-grenouille.jpg');
     padding: 0;
     position: absolute;
 }
@@ -956,10 +962,6 @@ p {
     background-color: $color4;
     padding: 10px;
 }
-.form-select-race, .form-select-animal, .form-select-service {
-    margin: 0;
-    font-family: $family-text;
-}
 .btn-soumettre-rapport, .btn-soumettre-modif-service {
     border-radius: 10px;
     width: 150px;
@@ -969,9 +971,11 @@ p {
     align-content: center;
     margin: 10px auto;
 }
-.btn-soumettre-rapport button, .validation-avis button, .modification-services button {
+.btn-soumettre-rapport button, .btn-accepter-avis, .modification-services button {
     font-family: $family-title;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: $color2;
 }
 .btn-soumettre-rapport button:hover, .btn-soumettre-modif-service button:hover {
     background-color: $color6;
@@ -1010,7 +1014,7 @@ p {
     margin: 10px;
     width: 100%;
 }
-.btn-valider, .btn-refuser{
+.btn-accepter-avis, .btn-refuser-avis{
     border-radius: 10px;
     width: 150px;
     display: flex;
@@ -1018,6 +1022,9 @@ p {
     align-items: center;  
     align-content: center;
     margin: 10px auto;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 input[type="text"] {
     font-family: $family-text;
@@ -1029,8 +1036,16 @@ input[type="text"] {
 }
 .affichage-alimentation label, .affichage-quantité label {
     font-family: $family-title;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 5px;
+}
+.form-select-service, .form-select-race, .form-select-name, .form-select-etat-habitat, .form-select-rapport-date, .form-select-poste {
+    font-family: $family-text;
     font-size: 1rem;
     margin: 5px;
+    padding: 5px;
+    border-radius: 10px;    
 }
 
   //PAGE ESPACE VETERINAIRE
@@ -1062,9 +1077,9 @@ input[type="text"] {
     background-color: $color5;
 }
 .vet-rapport-ali{
-    background-color: $color4;
+    background-color: $color7;
 }
-.vet-compte-rendu button, .vet-rapport-ali button {
+.btn-soumettre-compte-rendu , .btn-chercher-compte-rendu {
     border-radius: 10px;
     width: 150px;
     display: flex;
@@ -1072,27 +1087,38 @@ input[type="text"] {
     align-items: center;  
     align-content: center;
     margin: 10px auto;
+}
+.btn-soumettre-compte-rendu {
+    background-color: $color2;
     font-family: $family-title;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
-.vet-compte-rendu button:hover {
+.btn-chercher-compte-rendu {
     background-color: $color3;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
-.vet-rapport-ali button:hover {
+.btn-soumettre-compte-rendu:hover {
     background-color: $color3;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
-.form-select-race, .form-select-name, .form-select-service, 
-.form-select-date, .form-select-etat-habitat, .form-select-rapport-date,
-.form-select-poste, .form-control {
-    font-family: $family-text;
-    border-radius: 10px;
-    padding: 5px;
+.btn-chercher-compte-rendu:hover {
+    background-color: $color5;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .affichage-rapport-alimentation label {
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 5px;
 }
+
   
   //PAGE ESPACE ADMIN
 .admin-content1, .admin-content2, .admin-content3, .admin-content4 {
@@ -1141,20 +1167,22 @@ input[type="text"] {
 .crud-horaires h2 {
     margin: 5px;
 }
-.btn-valider-horaires {
+.bouton-valider-horaires {
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-.btn-valider-horaires button {
+.btn-valider-horaires {
     font-family: $family-title;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: $color2;
 }
-.btn-valider-horaires button:hover {
+.btn-valider-horaires:hover {
     background-color: $color6;
 }
 .admin-content-comptes-rapports {
@@ -1176,30 +1204,40 @@ input[type="text"] {
 }
 .crud-comptes label, .compte-rendu-vet-empl label {
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 5px;
-    padding: 5px;
+    padding-top: 5px;
 }
-.btn-modifier-compte button {
+.mdp-consignes {
+    font-family: $family-text;
+    font-size: 0.8rem;
+    margin: 0;
+    justify-content: flex-start;
+}
+.btn-creer-compte {
+    background-color: $color2;
+}
+.btn-modifier-compte {
     background-color: $color3;
 }
-.btn-creer-compte button:hover {
+.btn-creer-compte:hover {
     background-color: $color3;
 }
-.btn-modifier-compte button:hover {
+.btn-modifier-compte:hover {
     background-color: $color5;
 }
-.btn-creer-compte button, .btn-modifier-compte button, .btn-supprimer-compte button, .btn-chercher-compte-rendu button {
+.btn-creer-compte, .btn-modifier-compte, .btn-supprimer-compte, .btn-chercher-compte-rendu {
     border-radius: 10px;
-    font-family: $family-title;
-    font-size: 1rem;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     margin: 10px auto;
     border: 0;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .btn-crud-compte {
     display: flex;
@@ -1220,26 +1258,24 @@ input[type="text"] {
 .crud-services {
     background-color: $color5;
 }
-.select-image-habitat label {
+.select-image-habitat label, .dropdown-selection-animaux label {
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 5px;
+    padding-top: 5px;
 }
 .selection-animaux {
     margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.dropdown-selection-animaux label {
-    font-family: $family-title;
-    font-size: 1rem;
-    margin: 5px;
-}
 .dropdown-selection-animaux {
     display: flex;
     align-items: center;
+    border-radius: 10px;
     .dropdown-menu {
-      max-height: 200px; // Limite la hauteur pour éviter un menu trop grand
+      max-height: 200px;
       width: 200px;
       margin: 5px;
       background-color: $color8;
@@ -1258,24 +1294,28 @@ input[type="text"] {
     background-color: $color8;
     font-family: $family-text;
     font-size: 1rem;
+    padding: 5px;
 }
 .dropdown-toggle:hover {
     background-color: $color8;
 }
-.btn-modifier-habitat button {
+.btn-creer-habitat {
+    background-color: $color2;
+}
+.btn-modifier-habitat {
     background-color: $color3;
 }
-.btn-creer-habitat button:hover {
+.btn-creer-habitat:hover {
     background-color: $color3;
 }
-.btn-modifier-habitat button:hover {
+.btn-modifier-habitat:hover {
     background-color: $color5;
 }
-.btn-creer-habitat button, .btn-modifier-habitat button, .btn-supprimer-habitat button, .btn-chercher-compte-rendu button {
+.btn-creer-habitat, .btn-modifier-habitat, .btn-supprimer-habitat, .btn-chercher-compte-rendu {
     border-radius: 10px;
     font-family: $family-title;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1300,23 +1340,27 @@ input[type="text"] {
 }
 .select-image-service label {
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 5px;
 }
-.btn-modifier-service button {
+.btn-creer-service {
+    background-color: $color2;
+}
+.btn-modifier-service {
     background-color: $color3;
 }
-.btn-creer-service button:hover {
+.btn-creer-service:hover {
     background-color: $color3;
 }
-.btn-modifier-service button:hover {
+.btn-modifier-service:hover {
     background-color: $color5;
 }
-.btn-creer-service button, .btn-modifier-service button, .btn-supprimer-service button {
+.btn-creer-service, .btn-modifier-service, .btn-supprimer-service {
     border-radius: 10px;
     font-family: $family-title;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1350,22 +1394,26 @@ input[type="text"] {
 }
 .select-image-animal label {
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin: 5px;
 }
-.btn-modifier-animal button {
+.btn-creer-animal {
+    background-color: $color2;
+}
+.btn-modifier-animal {
     background-color: $color3;
 }
-.btn-creer-animal button:hover {
+.btn-creer-animal:hover {
     background-color: $color3;
 }
-.btn-modifier-animal button:hover {
+.btn-modifier-animal:hover {
     background-color: $color5;
 }
-.btn-creer-animal button, .btn-modifier-animal button, .btn-supprimer-animal button {
+.btn-creer-animal, .btn-modifier-animal, .btn-supprimer-animal {
     border-radius: 10px;
     font-family: $family-title;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -1380,5 +1428,59 @@ input[type="text"] {
     align-items: center;
     align-content: center;
     width: 100%;
+}
+
+// AVIS PAGE
+.bigtitle-img-avis {
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-image: url('../img/logo/bande-lion.jpg');
+    padding: 0;
+    position: absolute;
+}
+.avis-form {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+.avis-name,.avis-titre, .avis-email, .avis-message {
+    margin: 10px;
+}
+.avis-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+.avis-submit button {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: $color2;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.avis-submit button:hover {
+    background-color: $color3;
+    font-family: $family-title;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.avis-required p {
+    font-family: $family-text;
+    font-size: 0.8rem;
+    margin: 0;
+    justify-content: flex-start;
 }
   
