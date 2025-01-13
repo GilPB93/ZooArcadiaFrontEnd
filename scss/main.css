@@ -13219,8 +13219,27 @@ input[type=text] {
   margin: 5px;
 }
 
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.admin-content.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .admin-content1, .admin-content2, .admin-content3, .admin-content4 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   margin: 10px auto;
@@ -13247,11 +13266,11 @@ input[type=text] {
   flex-direction: column;
   align-items: left;
   align-content: center;
-  max-width: 705px;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   margin: 5px;
+  padding: 10px;
 }
 
 .dashboard {
@@ -13518,11 +13537,8 @@ input[type=text] {
 .crud-animaux {
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin: 10px;
-  padding: 5px;
-  max-width: 1430px;
+  margin: 5px;
+  padding: 10px;
   width: 100%;
   background-color: #F2CFC2;
 }

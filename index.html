@@ -23,35 +23,35 @@
                 </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
-                    <li class="nav-item"> 
+                    <li class="nav-item" data-show="all"> 
                       <a class="nav-link text-white" href="/">Accueil</a>
                     </li>
-                    <li class="nav-item"> 
+                    <li class="nav-item" data-show="all"> 
                       <a class="nav-link text-white" href="/habitats">Habitats</a>
                     </li>
-                    <li class="nav-item"> 
+                    <li class="nav-item" data-show="all"> 
                       <a class="nav-link text-white" href="/services">Services</a>
                     </li>
-                    <li class="nav-item"> 
+                    <li class="nav-item" data-show="all"> 
                       <a class="nav-link text-white" href="/contact">Contact</a>
                     </li>
-                    <li class="nav-item"> 
+                    <li class="nav-item" data-show="all"> 
                       <a class="nav-link text-white" href="/avis">Avis</a>
                     </li>
                     <li class="nav-item" data-show="disconnected"> 
                       <a class="nav-link text-white" href="/connexion">Connexion</a>
                     </li>
-                    <li class="nav-item" data-show="connected"> 
+                    <li class="nav-item" data-show="admin"> 
                       <a class="nav-link text-white" href="/administrateur">Mon espace admin</a>
                     </li>
-                    <li class="nav-item" data-show="connected"> 
+                    <li class="nav-item" data-show="veterinaire"> 
                       <a class="nav-link text-white" href="/veterinaire">Mon espace vetérinaire</a>
                     </li>
-                    <li class="nav-item" data-show="connected"> 
+                    <li class="nav-item" data-show="employe"> 
                       <a class="nav-link text-white" href="/employe">Mon espace employé</a>
                     </li>
                     <li class="nav-item" data-show="connected"> 
-                      <button class="nav-link text-white" id="signout-btn">Déconnexion</button>
+                      <button class="nav-link text-white" id="btnSignout">Déconnexion</button>
                     </li>
                   </ul>
                 </div>
@@ -74,6 +74,6 @@
 
       <script type="module" src="Router/Router.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
-      <script src="js/script.js"></script>
+      <script src="/js/script.js"></script>
   </body>
 </html>
