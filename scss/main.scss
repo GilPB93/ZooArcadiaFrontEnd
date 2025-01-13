@@ -99,13 +99,18 @@ p {
     font-size: 1.5rem;
     font-family: $family-title;
     font-weight: 600;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-grow: 1; /* Allow the nav items to take up remaining space */
+    padding-right: 100px;
 }
 .navbar-brand {
-    margin: 0;
+    margin-right: auto; /* Pushes the brand to the left */
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
     padding: 0;
+    border-radius: 10px;
 }
 .container-fluid {
     display: flex;
@@ -124,6 +129,12 @@ p {
     width: 100px;
     height: 100px;
     right: 0;
+}
+.navbar-toggler {
+    background-color: $color2;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
 }
 
 
