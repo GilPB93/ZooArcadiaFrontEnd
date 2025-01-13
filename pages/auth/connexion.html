@@ -12,26 +12,30 @@
         </div>
     </section>
 
-    <section class="connexion-form">
-        <div class="connexion-email">
-            <label for="EmailInput" class="form-label text-white">Username*</label>
-            <input type="email" class="form-control" id="EmailInput" placeholder="Saisissez votre email : exemple@email.com" name="Email">
-            <div class="invalid-feedback">
-                Le mail et le mot de passe que vous saisissez ne correspondent pas!
+    <section>
+        <form class="connexion-form" id="connexionForm">
+            <div class="connexion-email position-relative">
+                <label for="EmailInput" class="form-label text-white">Username*</label>
+                <div class="input-connexion-group">
+                    <input type="email" class="form-control" id="EmailInput" placeholder="Saisissez votre email : exemple@email.com" name="Email">
+                    <i id="iconEmail" class="bi position-absolute iconEmail"></i>
+                </div>
+                <span class="error-message" id="emailError"></span>
             </div>
-        </div>
-        <div class="connexion-password">
-            <label for="PasswordInput" class="form-label text-white">Mot de passe*</label>
-            <input type="password" class="form-control" id="PasswordInput" name="Password" placeholder="Saisissez votre mot de passe">
-            <div class="invalid-feedback">
-                Le mail et le mot de passe que vous saisissez ne correspondent pas!
+            <div class="connexion-password position-relative">
+                <label for="PasswordInput" class="form-label text-white">Mot de passe*</label>
+                <div class="input-connexion-group">
+                    <input type="password" class="form-control" id="PasswordInput" name="Password" placeholder="Saisissez votre mot de passe">
+                    <i id="iconPassword" class="bi position-absolute iconPassword"></i>
+                </div>
+                <span class="error-message" id="passwordError"></span>
             </div>
-        </div>
-        <div class="connexion-required">
-            <p class="text-white">*Champs obligatoires</p>
-        </div>
-        <div class="connexion-submit">
-            <button type="button" class="btn" id="btnSignin">Connexion</button>
-        </div>
+            <div class="connexion-required">
+                <p class="text-white">*Champs obligatoires</p>
+            </div>
+            <div class="connexion-submit">
+                <button type="button" class="btn" id="btnSignin">Connexion</button>
+            </div>
+        </form>        
     </section>
 </div>

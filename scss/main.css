@@ -12949,6 +12949,36 @@ p {
   font-size: 0.8rem;
 }
 
+.error-message {
+  font-family: "Arial", sans-serif;
+  font-size: 0.7rem;
+  color: red;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.iconEmail, .iconPassword {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-connexion-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.input-connexion-group.iconEmail {
+  display: flex;
+  align-content: end;
+}
+
 .bigtitle-img-vet {
   width: 100%;
   height: 100%;
