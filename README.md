@@ -53,26 +53,30 @@ Ces dépendances sont installées via `npm`. Voir la section "Installation" pour
 
 ### 5. Accéder à l'application
     Ouvrez votre navigateur et accédez à :
-    ```
+
+    ```bash
     http://localhost:3000
     ```
 
+
 ## 📂 Scripts NPM
 
-- `npm install` : Installe les dépendances.
-- `npm start` : Lance le projet en mode développement.
+- `npm install` : installer les dépendances.
+- `npm start` : lancer le projet en mode développement.
+
 
 ## 🎨 Style avec Sass et Bootstrap
-
-    Les styles sont écrits en **Sass** et compilés via l'extension **Live Sass Compiler**. Nous utilisons également **Bootstrap** pour un design réactif et des composants prêts à l'emploi.
+Les styles sont écrits en **Sass** et compilés via l'extension **Live Sass Compiler**. Nous utilisons également **Bootstrap** pour un design réactif et des composants prêts à l'emploi.
 
 ### Personnalisation de Bootstrap
-    Les fichiers Sass permettent de surcharger les variables de Bootstrap afin de personnaliser le thème.
+Les fichiers Sass permettent de surcharger les variables de Bootstrap afin de personnaliser le thème.
 
 
 ## 📄 Liens utiles
 - [Dépôt GitHub](https://github.com/GilPB93/ZooArcadiaFrontEnd)
 - [Documentation Bootstrap](https://getbootstrap.com/docs/5.3/)
 - [Documentation Bootstrap Icons](https://icons.getbootstrap.com/)
+
+
 
 [⬆️ Vers le haut](#ZooArcadiaFrontEnd)
