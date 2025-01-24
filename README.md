@@ -36,25 +36,23 @@ Ces dépendances sont installées via `npm`. Voir la section "Installation" pour
    ```
 
 ### 2. **Installer les dépendances**  
-   Assurez-vous que Node.js est installé, puis exécutez :  
+Assurez-vous que Node.js est installé, puis exécutez :  
    ```bash
    npm install
    ```
 
 ### 3. **Configurer le compilateur Sass**  
-   Installez l'extension **Live Sass Compiler** dans VS Code. 
-   Une fois installé, ouvrez votre projet dans VS Code et activez le compilateur pour vos fichiers Sass.
+Installez l'extension **Live Sass Compiler** dans VS Code. 
+Une fois installé, ouvrez votre projet dans VS Code et activez le compilateur pour vos fichiers Sass.
 
 ### 4. **Lancer le projet**  
-   Vous pouvez lancer un serveur local avec votre outil de choix, ou utiliser la commande :  
+Vous pouvez lancer un serveur local avec votre outil de choix, ou utiliser la commande :  
    ```bash
    npm start
    ```
 
 ### 5. Accéder à l'application
-    Ouvrez votre navigateur et accédez à :
-
-    ```bash
+    ```
     http://localhost:3000
     ```
 
