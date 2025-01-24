@@ -1,10 +1,12 @@
 # ZooArcadiaFrontEnd
 
 ## Description
-Partie front-end d'un projet basé sur la gestion et la visualisation d'un zoo virtuel. 
-Cette application web utilise des technologies modernes pour offrir une expérience utilisateur fluide et attrayante.
+Bienvenue dans le projet **ZooArcadia**. 
+Ce dépôt contient le code source pour la partie front-end de l'application ZooArcadia.
 
 [![Author](https://img.shields.io/badge/author-gilpb.tech%40hotmail.com-green.svg)](https://github.com/GilPB93)
+
+---
 
 
 ## 📋 Prérequis
@@ -12,6 +14,8 @@ Voici les versions recommandées des outils nécessaires :
 
 - **VS Code** : `version 1.96.4`
 - **Node.js** : `version 20.18.1`
+
+---
 
 
 ## 🛠️ Extensions et Dépendances
@@ -26,6 +30,7 @@ Voici les versions recommandées des outils nécessaires :
 
 Ces dépendances sont installées via `npm`. Voir la section "Installation" pour plus de détails.
 
+---
 
 ## 🚀 Installation
 
@@ -56,12 +61,14 @@ Vous pouvez lancer un serveur local avec votre outil de choix, ou utiliser la co
     http://localhost:3000
     ```
 
+---
 
 ## 📂 Scripts NPM
 
 - `npm install` : installer les dépendances.
 - `npm start` : lancer le projet en mode développement.
 
+---
 
 ## 🎨 Style avec Sass et Bootstrap
 Les styles sont écrits en **Sass** et compilés via l'extension **Live Sass Compiler**. Nous utilisons également **Bootstrap** pour un design réactif et des composants prêts à l'emploi.
@@ -69,12 +76,14 @@ Les styles sont écrits en **Sass** et compilés via l'extension **Live Sass Com
 ### Personnalisation de Bootstrap
 Les fichiers Sass permettent de surcharger les variables de Bootstrap afin de personnaliser le thème.
 
+---
 
 ## 📄 Liens utiles
 - [Dépôt GitHub](https://github.com/GilPB93/ZooArcadiaFrontEnd)
 - [Documentation Bootstrap](https://getbootstrap.com/docs/5.3/)
 - [Documentation Bootstrap Icons](https://icons.getbootstrap.com/)
 
+---
 
 
 [⬆️ Vers le haut](#ZooArcadiaFrontEnd)
